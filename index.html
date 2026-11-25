@@ -1,9 +1,11 @@
 <html>
 <head>
-Agenda Géographie Nanterre, ceci est un emplois du temps test
-Pour proposer un temps d'échange informel entre proffesseurs et étudiants ou entre étudiants, envoyez un mail à l'adresse Milie.delice@proton.me
+<link rel="stylesheet" href="https://w3schools.com">
+<title>Agenda Géographie Nanterre</title>
 </head>
 <body>
+  <h2>Agenda Géographie Nanterre</h2>
+  <h3>ceci est un emploi du temps test <br> pour proposer un temps d'échange informel entre professeurs et étudiants ou entre étudiants, envoyez un mail à l'adresse Milie.delice@proton.me</h3>
   <div class="w3-bar w3-black">
     <button class="Onglet" onclick="openCity('Geographie')">Geographie</button>
     <button class="Onglet" onclick="openCity('Histoire')">Histoire</button>
@@ -14,7 +16,7 @@ Pour proposer un temps d'échange informel entre proffesseurs et étudiants ou e
     <h1> Agenda L1 </h1>
   <iframe src="https://calendar.google.com/calendar/embed?src=2e18b41b26909f28393e53f8cea4df4ad7acf050479d8f3c3c2cc20531de60a1%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     <h1> Agenda L2 </h1>
-  <iframe src="https://calendar.google.com/calendar/embed?src=8ec16bff971d01cfa2067d0abe7b997cb5533e0405564f963de234fb057d87c0%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>"
+  <iframe src="https://calendar.google.com/calendar/embed?src=8ec16bff971d01cfa2067d0abe7b997cb5533e0405564f963de234fb057d87c0%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     <h1> Agenda L3 </h1>
   <iframe src="https://calendar.google.com/calendar/embed?src=036b2d829883dcd9b581715d9fa6420552bf61acb3a458e89c02e91066f8a479%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
   </div>
@@ -25,4 +27,10 @@ Pour proposer un temps d'échange informel entre proffesseurs et étudiants ou e
     <h2> Pour proposer un temps d'échange informel entre proffesseurs et étudiants ou entre étudiants, envoyez un mail à l'adresse Milie.delice@proton.me </h2>
   </div>
 </body>
+  <script>
+    function openCity(c) {
+      document.querySelectorAll('div.Onglet').forEach(e => e.style.display = 'none');
+      document.getElementById(c).style.display = 'block';
+    }
+</script>
 </html>
